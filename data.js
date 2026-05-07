@@ -12,8 +12,8 @@ const CREDIT_CARDS = [
         feeWaiver: "Waived on 2L annual spend",
         minSalary: 25000,
         minSpend: 10000,
-        rewardRate: "5% cashback on all online spends",
-        rewardDetails: "5% unlimited cashback on online transactions (capped at Rs.5,000 per statement cycle). 1% cashback on offline spends.",
+        rewardRate: "5% cashback on online (capped Rs.2,000/mo), 1% offline (capped Rs.2,000/mo)",
+        rewardDetails: "5% cashback on online spends capped at Rs.2,000/month. 1% cashback on offline capped at Rs.2,000/month. Total monthly cap Rs.4,000. Excludes gaming, toll, and government payments. (Devalued April 2026)",
         lounge: "Domestic: 4/year via RuPay network",
         fuelWaiver: "1% surcharge waiver up to Rs.500/month",
         forexMarkup: "3.5% + GST",
@@ -21,10 +21,10 @@ const CREDIT_CARDS = [
         milestoneBenefits: "2,000 bonus cashback on 1L spend in a year, 2,000 more at 2L",
         bestFor: ["online", "cashback"],
         highlights: [
-            { text: "5% cashback on ALL online spends — no merchant restriction", type: "good" },
+            { text: "5% cashback on online spends — no merchant restriction", type: "good" },
             { text: "Best entry-level cashback card per Aly Hajiani & Sharan", type: "good" },
-            { text: "Cashback credited as statement credit", type: "info" },
-            { text: "Recent devaluation: points now redeemable in multiples of 4,000 only", type: "warn" }
+            { text: "DEVALUED Apr 2026: Monthly cap Rs.4,000 (was Rs.5,000/cycle)", type: "warn" },
+            { text: "Excludes gaming, toll, govt payments. Points redeemable in multiples of 4,000 only", type: "warn" }
         ],
         applyUrl: "https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-card-cashback.page",
         eligibility: "Min age 21, salaried with 25K+ monthly income, CIBIL 700+",
@@ -235,7 +235,7 @@ const CREDIT_CARDS = [
         applyUrl: "https://www.axisbank.com/retail/cards/credit-card/ace-credit-card",
         eligibility: "Min age 21, income 40K+/month, CIBIL 720+",
         howToApply: "Apply via Axis Bank website or Google Pay app. Easiest approval via Google Pay for existing users.",
-        creatorTip: "Reward Points Club and Aly Hajiani both highlight this as the best flat cashback card. Great secondary card."
+        creatorTip: "Reward Points Club and Aly Hajiani both highlight this as the best flat cashback card. Note: Axis capped rewards on insurance/utility bills from Apr 2026."
     },
     {
         id: "indusind-tiger",
@@ -249,22 +249,22 @@ const CREDIT_CARDS = [
         minSpend: 10000,
         rewardRate: "1.5% reward rate, 2 free movie tickets/month",
         rewardDetails: "1.5 reward points per Rs.100 spent. 2 free movie tickets per month on BookMyShow (up to Rs.500). Domestic + international lounge access.",
-        lounge: "2 domestic + 2 international lounge visits per quarter",
+        lounge: "Lounge access now spend-linked from Jul 2026: Rs.1.5L/quarter required for standard cards",
         fuelWaiver: "1% fuel surcharge waiver",
         forexMarkup: "1.8% — one of the lowest",
         welcomeBenefit: "None",
         milestoneBenefits: "None",
         bestFor: ["travel", "rewards"],
         highlights: [
-            { text: "Free international lounge access on a LTF card", type: "good" },
             { text: "1.8% forex markup — among the lowest available", type: "good" },
             { text: "2 free movie tickets/month on BookMyShow", type: "good" },
+            { text: "DEVALUED Jul 2026: Lounge access now requires Rs.1.5L quarterly spend", type: "warn" },
             { text: "Base reward rate is average at 1.5%", type: "info" }
         ],
         applyUrl: "https://www.indusind.com/in/en/personal/cards/credit-card.html",
         eligibility: "Min age 21, income 35K+/month, CIBIL 700+",
         howToApply: "Apply via IndusInd Bank website or visit branch. Online application takes 5-7 days.",
-        creatorTip: "Aly Hajiani calls this the best LTF card for international travel perks. Low forex makes it great for foreign trips."
+        creatorTip: "Aly Hajiani previously called this best LTF for intl travel. Jul 2026 lounge devaluation makes it less attractive — Scapia now better for free lounge access."
     },
     {
         id: "bob-eterna",
@@ -288,12 +288,12 @@ const CREDIT_CARDS = [
             { text: "3.75% cashback on online — among highest for free cards", type: "good" },
             { text: "Both domestic and international lounge access", type: "good" },
             { text: "Currently lifetime free", type: "good" },
-            { text: "Capped at Rs.40K online spend per month for max cashback", type: "warn" }
+            { text: "NEW Apr 2026: 1% fee on education, toll >Rs.5K, railway >Rs.30K payments", type: "warn" }
         ],
         applyUrl: "https://www.bankofbaroda.in/personal-banking/digital-products/cards/credit-card",
         eligibility: "Min age 21, income 50K+/month, CIBIL 720+",
         howToApply: "Apply via Bank of Baroda website. BOB salary account holders get priority and instant offers.",
-        creatorTip: "CardExpert's sleeper pick. One of the best value-for-money cards if you can get the LTF variant."
+        creatorTip: "CardExpert's sleeper pick. Still great value but Apr 2026 added fees on education/toll/railway payments. Scapia (Federal Bank) is exempt from these charges."
     },
     // ============================
     // PREMIUM (75K - 2L salary)
@@ -308,19 +308,19 @@ const CREDIT_CARDS = [
         feeWaiver: "Waived on Rs.3L annual spend",
         minSalary: 75000,
         minSpend: 25000,
-        rewardRate: "4 points per Rs.150 spent (changing to 5 per Rs.200 from May 2026)",
-        rewardDetails: "Reward points transferable to airline miles at 2:1 ratio (Intermiles, Krisflyer etc). 1 point = Re.0.50 on flights. Great travel redemption value.",
-        lounge: "12 domestic + 6 international lounge visits per year via Priority Pass",
+        rewardRate: "5 points per Rs.200 spent (devalued May 2026 from 4/Rs.150)",
+        rewardDetails: "5 reward points per Rs.200 (was 4 per Rs.150 — ~25% devaluation from May 15, 2026). Points transferable to airline miles at 2:1 ratio. New Boarding Edge benefit: upload boarding pass for free spa/transfer perks.",
+        lounge: "3 domestic/quarter (requires Rs.60K spend in prev quarter) + 6 international/year via Priority Pass",
         fuelWaiver: "1% surcharge waiver up to Rs.1,000/month",
         forexMarkup: "2% + GST",
         welcomeBenefit: "2,500 reward points on first spend",
         milestoneBenefits: "5,000 points on Rs.3L spend, 7,500 on Rs.5L spend",
         bestFor: ["travel", "rewards"],
         highlights: [
-            { text: "Priority Pass lounge access — 12 domestic + 6 international", type: "good" },
+            { text: "New Boarding Edge benefit: free spa/transfers after flights", type: "good" },
             { text: "Points transferable to airline miles — great for travel", type: "good" },
-            { text: "HDFC's most popular premium card", type: "info" },
-            { text: "Reward rate being devalued from May 2026", type: "warn" }
+            { text: "DEVALUED May 2026: Reward rate dropped ~25% (5pts/Rs.200 vs 4pts/Rs.150)", type: "warn" },
+            { text: "Domestic lounge now needs Rs.60K/quarter spend (was unconditional)", type: "warn" }
         ],
         applyUrl: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia-gold-credit-card",
         eligibility: "Min age 21, income 75K+/month or 9L+ annual, CIBIL 750+",
@@ -339,16 +339,16 @@ const CREDIT_CARDS = [
         minSpend: 30000,
         rewardRate: "2 points per Rs.100 spent, 4x on travel & dining",
         rewardDetails: "2 reward points per Rs.100 base. 4x accelerated on travel and dining categories. Points redeemable for flights, hotels on ICICI rewards portal.",
-        lounge: "8 domestic + 4 international lounge visits per quarter (very generous)",
+        lounge: "Lounge access now requires Rs.75K quarterly spend (up from Rs.35K) effective Jul 2026",
         fuelWaiver: "1% surcharge waiver",
         forexMarkup: "2% + GST",
         welcomeBenefit: "Cleartrip voucher worth Rs.2,500",
         milestoneBenefits: "Bonus points on quarterly milestones",
         bestFor: ["travel", "dining"],
         highlights: [
-            { text: "32 domestic + 16 international lounge visits/year — among highest", type: "good" },
             { text: "4x rewards on travel & dining", type: "good" },
-            { text: "Generous lounge quota for a Rs.3,500 fee card", type: "info" },
+            { text: "Still one of the best mid-premium travel cards", type: "good" },
+            { text: "DEVALUED Jul 2026: Lounge needs Rs.75K/quarter spend (was Rs.35K)", type: "warn" },
             { text: "ICICI reward point value is lower than HDFC", type: "warn" }
         ],
         applyUrl: "https://www.icicibank.com/card/credit-cards/icici-bank-sapphiro-credit-card",
@@ -584,7 +584,7 @@ const CREDIT_CARDS = [
             { text: "10% rewards in your chosen categories — highly customizable", type: "good" },
             { text: "Free flight/hotel vouchers on milestones", type: "good" },
             { text: "Need consistent Rs.1L/month spend to unlock max rewards", type: "warn" },
-            { text: "Equitas is a smaller bank — fewer branches", type: "info" }
+            { text: "DEVALUED Apr 2026: Complimentary insurance covers discontinued", type: "warn" }
         ],
         applyUrl: "https://www.equitasbank.com/credit-cards",
         eligibility: "Min income Rs.75K/month, CIBIL 720+",
@@ -616,12 +616,12 @@ const CREDIT_CARDS = [
             { text: "India's most aspirational credit card — gold standard for rewards", type: "good" },
             { text: "Unlimited lounge access for primary AND add-on cards", type: "good" },
             { text: "Up to 6.66% return via SmartBuy — highest in India", type: "good" },
-            { text: "Invite-only: need Rs.5L/month salary or Rs.60L ITR", type: "warn" }
+            { text: "NEW Apr 2026: Must spend Rs.18L/yr OR Rs.50L bank relationship to retain card", type: "warn" }
         ],
         applyUrl: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/infinia-credit-card",
-        eligibility: "Invite only. Rs.5L+ monthly salary or Rs.60L+ annual ITR. Existing HDFC Diners Black/Regalia Gold holders may get upgrade offers.",
+        eligibility: "Invite only. Rs.5L+ monthly salary or Rs.60L+ annual ITR. NEW (Apr 2026): Must maintain Rs.18L annual spend OR Rs.50L relationship value to retain card.",
         howToApply: "Cannot apply directly. Get HDFC Diners Black first, spend heavily for 6-12 months, then request upgrade via HDFC relationship manager or NetBanking.",
-        creatorTip: "Every creator's #1 aspirational card. Finance With Sharan calls it the ultimate credit card in India. Aly Hajiani says the SmartBuy 10x hack makes this unbeatable."
+        creatorTip: "Every creator's #1 aspirational card. Finance With Sharan calls it the ultimate credit card in India. Aly Hajiani warns: new Apr 2026 retention rules mean you must spend Rs.18L/year or risk downgrade."
     },
     {
         id: "axis-magnus",
@@ -644,13 +644,13 @@ const CREDIT_CARDS = [
         highlights: [
             { text: "10%+ return for heavy spenders (3L+/month)", type: "good" },
             { text: "Metal card variant available", type: "good" },
-            { text: "Best returns at very high spend levels", type: "info" },
+            { text: "DEVALUED 2026: Accor, Marriott, Qatar Airways removed as transfer partners", type: "warn" },
             { text: "Reward rate drops significantly below 1L/month spend", type: "warn" }
         ],
         applyUrl: "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card",
         eligibility: "Min income Rs.5L/month, relationship-based. Burgundy Private banking members get priority.",
         howToApply: "Apply via Axis Bank relationship manager or Burgundy banking. Not available via open application.",
-        creatorTip: "CardExpert says this beats Infinia for spenders doing 3L+ per month. The milestone bonuses make it king at high volumes."
+        creatorTip: "CardExpert says this beats Infinia for high spenders. WARNING: Axis removed key transfer partners (Accor, Marriott, Qatar) in 2026 — significantly reduces travel redemption value."
     },
     {
         id: "amex-platinum",
