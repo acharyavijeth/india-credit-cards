@@ -243,24 +243,22 @@ function toggleMobileMenu() {
     document.querySelector(".nav-links").classList.toggle("active");
 }
 
-// Initialize
+// Initialize — only init elements that exist on the current page
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("salarySlider").addEventListener("input", updateRecommendations);
-    document.getElementById("spendSlider").addEventListener("input", updateRecommendations);
+    var salarySlider = document.getElementById("salarySlider");
+    var spendSlider = document.getElementById("spendSlider");
+    if (salarySlider && spendSlider) {
+        salarySlider.addEventListener("input", updateRecommendations);
+        spendSlider.addEventListener("input", updateRecommendations);
+        updateRecommendations();
+    }
 
-    updateRecommendations();
-    renderAllCards();
-    populateCompareDropdowns();
+    if (document.getElementById("allCards")) {
+        renderAllCards();
+    }
 
-    // Smooth scroll for nav links
-    document.querySelectorAll('.nav-links a').forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                document.querySelector('.nav-links').classList.remove('active');
-            }
-        });
-    });
+    if (document.getElementById("compare1")) {
+        populateCompareDropdowns();
+        updateComparison();
+    }
 });

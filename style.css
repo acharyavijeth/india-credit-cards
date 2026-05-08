@@ -76,6 +76,137 @@ body {
 
 .nav-links a:hover { color: var(--primary); }
 
+.nav-links a.active {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+/* PAGE HEADER (non-home pages) */
+.page-header {
+    background: linear-gradient(135deg, #1a56db 0%, #7c3aed 100%);
+    color: white;
+    padding: 60px 0 50px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.page-header p {
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+}
+
+/* HERO CTAs */
+.hero-cta {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+}
+
+.cta-btn-primary {
+    background: white;
+    color: var(--primary);
+}
+
+.cta-btn-primary:hover {
+    background: #f1f5f9;
+    transform: translateY(-1px);
+}
+
+.cta-btn-secondary {
+    background: transparent;
+    color: white;
+    border: 1.5px solid rgba(255,255,255,0.5);
+}
+
+.cta-btn-secondary:hover {
+    border-color: white;
+    background: rgba(255,255,255,0.1);
+}
+
+/* On non-hero sections, primary CTA inverted */
+.section .cta-btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.section .cta-btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.section .cta-btn-secondary {
+    color: var(--primary);
+    border: 1.5px solid var(--primary);
+}
+
+.section .cta-btn-secondary:hover {
+    background: var(--primary-light);
+}
+
+/* QUICK LINKS */
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.quick-link {
+    display: block;
+    padding: 32px 28px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.quick-link:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-2px);
+}
+
+.quick-link-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+}
+
+.quick-link h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.quick-link p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
 .mobile-menu-btn {
     display: none;
     background: none;

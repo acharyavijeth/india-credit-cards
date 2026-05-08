@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian Credit Card Guide 2026 | Find Your Perfect Card</title>
+    <title>CardSathi - Find Your Perfect Indian Credit Card 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,16 +11,15 @@
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <div class="logo">
+            <a href="index.html" class="logo">
                 <span class="logo-icon">💳</span>
                 <span class="logo-text">CardSathi</span>
-            </div>
+            </a>
             <ul class="nav-links">
-                <li><a href="#finder">Card Finder</a></li>
-                <li><a href="#cards">All Cards</a></li>
-                <li><a href="#compare">Compare</a></li>
-                <li><a href="#guide">Guide</a></li>
-                <li><a href="#sources">Sources</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="cards.html">All Cards</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="guide.html">Apply Guide</a></li>
             </ul>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
         </div>
@@ -30,7 +29,11 @@
         <div class="container">
             <h1>Find Your Perfect Credit Card</h1>
             <p class="hero-subtitle">Curated recommendations from India's top finance creators — Finance With Sharan, Aly Hajiani, 1% Club & Reward Points Club</p>
-            <p class="last-updated">Last updated: <span id="lastUpdated">May 8, 2026</span> (includes Apr-May devaluations, new airline co-brands added)</p>
+            <p class="last-updated">Last updated: <span id="lastUpdated">May 7, 2026</span> (includes Apr-May devaluations)</p>
+            <div class="hero-cta">
+                <a href="compare.html" class="cta-btn cta-btn-primary">Compare Cards →</a>
+                <a href="cards.html" class="cta-btn cta-btn-secondary">Browse All Cards</a>
+            </div>
         </div>
     </header>
 
@@ -75,6 +78,10 @@
                 <h3>Recommended Cards for You</h3>
                 <div id="recommendedCards" class="cards-grid"></div>
             </div>
+
+            <div style="text-align:center;margin-top:32px">
+                <a href="cards.html" class="cta-btn cta-btn-primary">View All 25+ Cards →</a>
+            </div>
         </div>
     </section>
 
@@ -84,133 +91,32 @@
             <div class="profile-card">
                 <h3>Your Profile Match</h3>
                 <div id="profileSummary">
-                    <p>Based on <strong>&#8377;1.4L/month salary</strong>, you qualify for <strong>Premium tier cards</strong>. Your annual income of ~&#8377;16.8L puts you in the sweet spot for cards like HDFC Regalia Gold, ICICI Sapphiro, and SBI Card ELITE.</p>
+                    <p>Based on <strong>&#8377;1.4L/month salary</strong>, you qualify for <strong>Premium tier cards</strong>.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ALL CARDS BY SALARY TIER -->
-    <section id="cards" class="section">
+    <!-- QUICK LINKS -->
+    <section class="section">
         <div class="container">
-            <h2>Credit Cards by Income Tier</h2>
-
-            <div class="tier-filters">
-                <button class="tier-btn active" data-tier="all" onclick="filterTier(this)">All Tiers</button>
-                <button class="tier-btn" data-tier="entry" onclick="filterTier(this)">Entry (&#8377;15K-40K)</button>
-                <button class="tier-btn" data-tier="mid" onclick="filterTier(this)">Mid-Range (&#8377;40K-75K)</button>
-                <button class="tier-btn" data-tier="premium" onclick="filterTier(this)">Premium (&#8377;75K-2L)</button>
-                <button class="tier-btn" data-tier="super" onclick="filterTier(this)">Super Premium (&#8377;2L-5L)</button>
-                <button class="tier-btn" data-tier="hni" onclick="filterTier(this)">HNI (&#8377;5L+)</button>
-            </div>
-
-            <div id="allCards" class="cards-grid"></div>
-        </div>
-    </section>
-
-    <!-- COMPARE SECTION -->
-    <section id="compare" class="section compare-section">
-        <div class="container">
-            <h2>Compare Cards Side by Side</h2>
-            <p class="section-desc">Select up to 3 cards to compare</p>
-            <div class="compare-selectors">
-                <select id="compare1" onchange="updateComparison()">
-                    <option value="">Select Card 1</option>
-                </select>
-                <select id="compare2" onchange="updateComparison()">
-                    <option value="">Select Card 2</option>
-                </select>
-                <select id="compare3" onchange="updateComparison()">
-                    <option value="">Select Card 3</option>
-                </select>
-            </div>
-            <div id="comparisonTable" class="comparison-table-wrapper"></div>
-        </div>
-    </section>
-
-    <!-- HOW TO APPLY GUIDE -->
-    <section id="guide" class="section guide-section">
-        <div class="container">
-            <h2>How to Apply for Credit Cards</h2>
-            <div class="guide-grid">
-                <div class="guide-card">
-                    <div class="guide-number">1</div>
-                    <h3>Check Eligibility</h3>
-                    <ul>
-                        <li>Minimum age: 21 years (18 for add-on cards)</li>
-                        <li>Stable income source (salaried or self-employed)</li>
-                        <li>Good CIBIL score (750+ preferred, 700+ minimum)</li>
-                        <li>KYC documents: PAN, Aadhaar, salary slips</li>
-                    </ul>
-                </div>
-                <div class="guide-card">
-                    <div class="guide-number">2</div>
-                    <h3>Apply at Your Salary Bank First</h3>
-                    <ul>
-                        <li>Your salary bank sees your income — 3x higher approval rate</li>
-                        <li>Pre-approved offers often waive joining fees</li>
-                        <li>Check NetBanking/app for pre-approved card offers</li>
-                        <li>HDFC, ICICI, Axis, SBI — all push offers to salary account holders</li>
-                    </ul>
-                </div>
-                <div class="guide-card">
-                    <div class="guide-number">3</div>
-                    <h3>Where to Apply</h3>
-                    <ul>
-                        <li><strong>Bank website/app</strong> — best for pre-approved offers</li>
-                        <li><strong>Paisabazaar / BankBazaar</strong> — compare & apply in one place</li>
-                        <li><strong>Bank branch</strong> — for premium cards needing relationship</li>
-                        <li><strong>Referral links</strong> — often get bonus joining benefits</li>
-                    </ul>
-                </div>
-                <div class="guide-card">
-                    <div class="guide-number">4</div>
-                    <h3>Pro Tips from Creators</h3>
-                    <ul>
-                        <li>Never apply for multiple cards at once — each hard inquiry drops CIBIL by 5-10 points</li>
-                        <li>Always negotiate annual fee waiver — call retention desk before renewal</li>
-                        <li>Convert large purchases to no-cost EMI to maintain utilization ratio below 30%</li>
-                        <li>Pay full bill before due date — never pay just minimum amount</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="apply-links-section">
-                <h3>Direct Apply Links by Bank</h3>
-                <div class="apply-links-grid">
-                    <a href="https://www.hdfcbank.com/personal/pay/cards/credit-cards" target="_blank" class="apply-link-card">
-                        <strong>HDFC Bank</strong>
-                        <span>Apply via HDFC website</span>
-                    </a>
-                    <a href="https://www.icicibank.com/card/credit-cards" target="_blank" class="apply-link-card">
-                        <strong>ICICI Bank</strong>
-                        <span>Apply via ICICI website</span>
-                    </a>
-                    <a href="https://www.sbicard.com/en/apply-now.page" target="_blank" class="apply-link-card">
-                        <strong>SBI Card</strong>
-                        <span>Apply via SBI Card website</span>
-                    </a>
-                    <a href="https://www.axisbank.com/retail/cards/credit-card" target="_blank" class="apply-link-card">
-                        <strong>Axis Bank</strong>
-                        <span>Apply via Axis website</span>
-                    </a>
-                    <a href="https://www.americanexpress.com/in/credit-cards/" target="_blank" class="apply-link-card">
-                        <strong>American Express</strong>
-                        <span>Apply via Amex India</span>
-                    </a>
-                    <a href="https://www.hsbc.co.in/credit-cards/" target="_blank" class="apply-link-card">
-                        <strong>HSBC</strong>
-                        <span>Apply via HSBC India</span>
-                    </a>
-                    <a href="https://www.idfcfirstbank.com/credit-card" target="_blank" class="apply-link-card">
-                        <strong>IDFC First Bank</strong>
-                        <span>Apply via IDFC website</span>
-                    </a>
-                    <a href="https://www.paisabazaar.com/credit-card/" target="_blank" class="apply-link-card">
-                        <strong>Paisabazaar</strong>
-                        <span>Compare & apply all banks</span>
-                    </a>
-                </div>
+            <h2>Explore CardSathi</h2>
+            <div class="quick-links-grid">
+                <a href="cards.html" class="quick-link">
+                    <div class="quick-link-icon">📋</div>
+                    <h3>All Cards</h3>
+                    <p>Browse 25+ cards across 5 income tiers — Entry to HNI</p>
+                </a>
+                <a href="compare.html" class="quick-link">
+                    <div class="quick-link-icon">⚖️</div>
+                    <h3>Compare Cards</h3>
+                    <p>Side-by-side comparison of up to 3 cards on 17 parameters</p>
+                </a>
+                <a href="guide.html" class="quick-link">
+                    <div class="quick-link-icon">📝</div>
+                    <h3>Apply Guide</h3>
+                    <p>Step-by-step process, eligibility, and direct bank apply links</p>
+                </a>
             </div>
         </div>
     </section>
@@ -219,28 +125,24 @@
     <section id="sources" class="section sources-section">
         <div class="container">
             <h2>Our Sources</h2>
-            <p class="section-desc">This site synthesizes information from India's top credit card content creators</p>
+            <p class="section-desc">This site synthesizes information from India's top credit card creators</p>
             <div class="sources-grid">
                 <a href="https://www.youtube.com/@financewithsharan" target="_blank" class="source-card">
                     <h3>Finance With Sharan</h3>
-                    <p>Sharan Hegde — India's largest finance creator. Covers credit cards, investing, and financial literacy with 10M+ followers.</p>
+                    <p>Sharan Hegde — India's largest finance creator. Credit card content, financial literacy with 10M+ followers.</p>
                 </a>
                 <a href="https://www.youtube.com/@AlyHajiani" target="_blank" class="source-card">
                     <h3>Aly Hajiani</h3>
-                    <p>"That Credit Card Guy" — Deep-dive reviews on every major card in India. Known for detailed reward point calculations and travel hacking tips.</p>
+                    <p>"That Credit Card Guy" — Deep-dive reviews on every major card in India. Travel hacking expert.</p>
                 </a>
-                <a href="https://www.youtube.com/@1aborpercentclub" target="_blank" class="source-card">
+                <a href="https://www.youtube.com/@1percentclub" target="_blank" class="source-card">
                     <h3>1% Club (onepercentclub12)</h3>
-                    <p>India's biggest finance community by Sharan Hegde. Credit card masterclasses, financial independence content, and expert interviews.</p>
+                    <p>India's biggest finance community by Sharan Hegde. Credit card masterclasses and expert content.</p>
                 </a>
                 <a href="https://www.youtube.com/@RewardPointsClub" target="_blank" class="source-card">
                     <h3>Reward Points Club</h3>
-                    <p>Dedicated to maximizing credit card reward points. Covers redemption strategies, point valuations, and best card combinations.</p>
+                    <p>Dedicated to maximizing credit card reward points. Redemption strategies and point valuations.</p>
                 </a>
-            </div>
-            <div class="data-sources">
-                <h3>Data also sourced from:</h3>
-                <p>CardExpert.in, PaisaBazaar.com, BankBazaar.com, official bank websites (HDFC, ICICI, SBI, Axis, Amex, HSBC, IDFC First), and OnePercentClub.io</p>
             </div>
         </div>
     </section>
