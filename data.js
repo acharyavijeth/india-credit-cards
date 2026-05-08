@@ -249,7 +249,7 @@ const CREDIT_CARDS = [
         minSpend: 10000,
         rewardRate: "1.5% reward rate, 2 free movie tickets/month",
         rewardDetails: "1.5 reward points per Rs.100 spent. 2 free movie tickets per month on BookMyShow (up to Rs.500). Domestic + international lounge access.",
-        lounge: "Lounge access now spend-linked from Jul 2026: Rs.1.5L/quarter required for standard cards",
+        lounge: "Lounge access now spend-linked from Apr 2026: Rs.1.5L/quarter required for standard cards",
         fuelWaiver: "1% fuel surcharge waiver",
         forexMarkup: "1.8% — one of the lowest",
         welcomeBenefit: "None",
@@ -258,13 +258,13 @@ const CREDIT_CARDS = [
         highlights: [
             { text: "1.8% forex markup — among the lowest available", type: "good" },
             { text: "2 free movie tickets/month on BookMyShow", type: "good" },
-            { text: "DEVALUED Jul 2026: Lounge access now requires Rs.1.5L quarterly spend", type: "warn" },
+            { text: "DEVALUED Apr 2026: Lounge access now requires Rs.1.5L quarterly spend", type: "warn" },
             { text: "Base reward rate is average at 1.5%", type: "info" }
         ],
         applyUrl: "https://www.indusind.com/in/en/personal/cards/credit-card.html",
         eligibility: "Min age 21, income 35K+/month, CIBIL 700+",
         howToApply: "Apply via IndusInd Bank website or visit branch. Online application takes 5-7 days.",
-        creatorTip: "Aly Hajiani previously called this best LTF for intl travel. Jul 2026 lounge devaluation makes it less attractive — Scapia now better for free lounge access."
+        creatorTip: "Aly Hajiani previously called this best LTF for intl travel. Apr 2026 lounge devaluation (effective April 1) makes it less attractive — Scapia now better for free lounge access."
     },
     {
         id: "bob-eterna",
@@ -294,6 +294,35 @@ const CREDIT_CARDS = [
         eligibility: "Min age 21, income 50K+/month, CIBIL 720+",
         howToApply: "Apply via Bank of Baroda website. BOB salary account holders get priority and instant offers.",
         creatorTip: "CardExpert's sleeper pick. Still great value but Apr 2026 added fees on education/toll/railway payments. Scapia (Federal Bank) is exempt from these charges."
+    },
+    {
+        id: "axis-indigo",
+        name: "IndiGo Axis Bank Credit Card",
+        bank: "Axis Bank",
+        tier: "mid",
+        joiningFee: 799,
+        annualFee: 799,
+        feeWaiver: "Waived on Rs.2L annual spend",
+        minSalary: 40000,
+        minSpend: 15000,
+        rewardRate: "Accelerated BluChip miles on IndiGo + bonus on dining, grocery & UPI",
+        rewardDetails: "Earns IndiGo BluChip miles on all spends. Accelerated miles on IndiGo.com flight bookings. Bonus rewards on grocery, dining, and UPI transactions. BluChip miles redeemable for IndiGo tickets and upgrades.",
+        lounge: "Domestic lounge access included per quarter",
+        fuelWaiver: "1% fuel surcharge waiver",
+        forexMarkup: "3.5%",
+        welcomeBenefit: "Bonus BluChip miles on first IndiGo booking with the card",
+        milestoneBenefits: "Bonus miles on annual IndiGo spend milestones",
+        bestFor: ["travel", "rewards"],
+        highlights: [
+            { text: "NEW Feb 2026: First dedicated IndiGo co-branded card by Axis Bank", type: "good" },
+            { text: "Accelerated BluChip miles on every IndiGo flight booking", type: "good" },
+            { text: "Bonus rewards on grocery, dining & UPI — useful for everyday spends", type: "info" },
+            { text: "Best value only for frequent IndiGo flyers (4+ flights/year)", type: "warn" }
+        ],
+        applyUrl: "https://www.axisbank.com/retail/cards/credit-card",
+        eligibility: "Min age 21, income 40K+/month, CIBIL 720+",
+        howToApply: "Apply via Axis Bank website or IndiGo official booking channels.",
+        creatorTip: "Best airline co-brand for IndiGo loyalists launched in 2026. The BluChip integration accelerates miles on every booking. Pair with Axis ACE for non-IndiGo everyday spends."
     },
     // ============================
     // PREMIUM (75K - 2L salary)
@@ -526,12 +555,12 @@ const CREDIT_CARDS = [
             { text: "3.3% flat reward rate — matches HDFC Diners Black", type: "good" },
             { text: "Versatile redemption: ITC, Titan, Starbucks vouchers", type: "good" },
             { text: "Lower fee than Diners Black with similar rewards", type: "info" },
-            { text: "Limited branch network vs HDFC", type: "warn" }
+            { text: "May 2026: Federal Bank acquired Standard Chartered India card portfolio — cards valid, future issuance may change", type: "warn" }
         ],
         applyUrl: "https://www.sc.com/in/credit-cards/ultimate/",
         eligibility: "Min income Rs.2L/month, CIBIL 750+",
         howToApply: "Apply via SC website or branch. SC salary holders get pre-approved offers.",
-        creatorTip: "CardExpert rates the redemption catalog as one of the best. Good alternative to HDFC Diners if you prefer Visa acceptance."
+        creatorTip: "CardExpert rates the redemption catalog as one of the best. Good alternative to HDFC Diners if you prefer Visa acceptance. NOTE: Federal Bank acquired SC India's card portfolio (May 4, 2026) — verify card availability before applying."
     },
     {
         id: "yes-marquee",
