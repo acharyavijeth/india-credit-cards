@@ -111,12 +111,12 @@ const CREDIT_CARDS = [
             { text: "Lifetime free with no hidden charges", type: "good" },
             { text: "Reward points never expire", type: "good" },
             { text: "Easy approval for first-time card applicants", type: "info" },
-            { text: "Lower reward rate compared to paid cards", type: "warn" }
+            { text: "DEVALUED 2026: LTF earn rate worsened by ~25%", type: "warn" }
         ],
         applyUrl: "https://www.idfcfirstbank.com/credit-card/classic",
         eligibility: "Min age 21, income 15K+/month, CIBIL 680+",
         howToApply: "Apply via IDFC FIRST Bank app or website. Very high approval rate for new-to-credit applicants.",
-        creatorTip: "Recommended by 1% Club as a starter card. No annual fee makes it risk-free for beginners."
+        creatorTip: "Recommended by 1% Club as a starter card. NOTE: IDFC FIRST devalued LTF cards in 2026 — earn rate down 25%. Amazon Pay ICICI is now a stronger free alternative."
     },
     {
         id: "federal-scapia",
@@ -339,9 +339,9 @@ const CREDIT_CARDS = [
         minSpend: 25000,
         rewardRate: "5 points per Rs.200 spent (devalued May 2026 from 4/Rs.150)",
         rewardDetails: "5 reward points per Rs.200 (was 4 per Rs.150 — ~25% devaluation from May 15, 2026). Points transferable to airline miles at 2:1 ratio. New Boarding Edge benefit: upload boarding pass for free spa/transfer perks.",
-        lounge: "3 domestic/quarter (requires Rs.60K spend in prev quarter) + 6 international/year via Priority Pass",
+        lounge: "3 domestic/quarter (requires Rs.60K spend in prev quarter) + 6 international/year via Priority Pass. Now via digital QR/SMS vouchers.",
         fuelWaiver: "1% surcharge waiver up to Rs.1,000/month",
-        forexMarkup: "2% + GST",
+        forexMarkup: "2% + GST (new 1.75% DCC fee on INR international transactions)",
         welcomeBenefit: "2,500 reward points on first spend",
         milestoneBenefits: "5,000 points on Rs.3L spend, 7,500 on Rs.5L spend",
         bestFor: ["travel", "rewards"],
@@ -465,12 +465,12 @@ const CREDIT_CARDS = [
             { text: "5-7% return when redeemed for Taj vouchers", type: "good" },
             { text: "Points transfer to 18+ airline/hotel partners", type: "good" },
             { text: "Amex offers portal gives additional 5-20% back", type: "info" },
-            { text: "Limited acceptance at offline stores in India", type: "warn" }
+            { text: "Amex Platinum Travel milestone threshold raised 75% in 2026", type: "warn" }
         ],
         applyUrl: "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
         eligibility: "Min age 21, income 60K+/month, CIBIL 750+",
         howToApply: "Apply via Amex website directly. Also get referral links from existing Amex cardholders for bonus points.",
-        creatorTip: "Aly Hajiani's favorite for travel redemptions. The Taj voucher hack gives 5-7% return — highest for any mid-range card."
+        creatorTip: "Aly Hajiani's favorite for travel redemptions. Taj voucher hack still gives 5-7% return. NOTE: Amex raised milestone thresholds 75% in 2026 across Platinum Travel — harder to hit bonuses now."
     },
     {
         id: "hdfc-tata-neu-infinity",
