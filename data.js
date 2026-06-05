@@ -189,8 +189,8 @@ const CREDIT_CARDS = [
         feeWaiver: "Lifetime Free (limited period offer)",
         minSalary: 40000,
         minSpend: 15000,
-        rewardRate: "10% on Swiggy, 5% on online, 1% on offline",
-        rewardDetails: "10% cashback on entire Swiggy ecosystem (Food, Instamart, Dineout, Genie). 5% on other online platforms. 1% offline. Cashback as Swiggy money.",
+        rewardRate: "10% on Swiggy (min Rs.249/txn), 5% on online, 1% on offline",
+        rewardDetails: "10% cashback on Swiggy ecosystem — NEW Apr 17 2026: minimum Rs.249 per transaction required for 10%, below that earns 5% or 1%. Cashback now adjusted within same billing cycle. New Cleartrip benefit: 5% cashback (capped Rs.1,500) + 6% instant flight discount.",
         lounge: "4 domestic lounge visits/quarter",
         fuelWaiver: "1% surcharge waiver",
         forexMarkup: "2% + GST",
@@ -199,9 +199,9 @@ const CREDIT_CARDS = [
         bestFor: ["dining", "online"],
         highlights: [
             { text: "10% back on Swiggy + 5% on all online spends", type: "good" },
+            { text: "NEW Apr 2026: Cleartrip 5% cashback (Rs.1,500 cap) added", type: "good" },
             { text: "Currently lifetime free — grab before offer ends", type: "good" },
-            { text: "Free Swiggy One membership included", type: "info" },
-            { text: "Rewards locked to Swiggy ecosystem", type: "warn" }
+            { text: "NEW Apr 17 2026: Need Rs.249+ per transaction for 10% rate", type: "warn" }
         ],
         applyUrl: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/swiggy-hdfc-bank-credit-card",
         eligibility: "Min age 21, income 40K+/month, CIBIL 720+",
@@ -767,5 +767,66 @@ const CREDIT_CARDS = [
         eligibility: "HSBC Premier account holders. Requires Rs.50L+ total relationship value.",
         howToApply: "Open HSBC Premier savings account first, then card is offered automatically.",
         creatorTip: "CardExpert rates this among the best for all-category spending at HNI level. Zero forex is a game-changer for global travelers."
+    },
+    // ============================
+    // ADDED MAY 2026 from creator reviews
+    // ============================
+    {
+        id: "hsbc-travelone",
+        name: "HSBC TravelOne Credit Card",
+        bank: "HSBC",
+        tier: "premium",
+        joiningFee: 4999,
+        annualFee: 4999,
+        feeWaiver: "Waived on Rs.4L annual spend",
+        minSalary: 75000,
+        minSpend: 30000,
+        rewardRate: "4x points on travel/dining, 1 point per Rs.100 base, 20 transfer partners",
+        rewardDetails: "1 reward point per Rs.100 base. 4x accelerated on travel and dining. Points transferable to 20 hotel/airline partners including Accor ALL (1:1 - now best value after Axis dropped Accor in Apr 2026). 1 RP = ~Re.1 via transfer partners.",
+        lounge: "6 domestic + 4 international lounge visits per year via Priority Pass",
+        fuelWaiver: "1% surcharge waiver",
+        forexMarkup: "1.99%",
+        welcomeBenefit: "10,000 bonus reward points on first spend",
+        milestoneBenefits: "5,000 points on Rs.4L annual spend",
+        bestFor: ["travel", "rewards", "dining"],
+        highlights: [
+            { text: "20 transfer partners — most diverse in India", type: "good" },
+            { text: "Accor 1:1 transfer now best in India (Axis dropped Accor Apr 2026)", type: "good" },
+            { text: "Recommended by Aly Hajiani as Axis Atlas replacement", type: "good" },
+            { text: "1.99% forex markup — very competitive for premium card", type: "good" }
+        ],
+        applyUrl: "https://www.hsbc.co.in/credit-cards/products/travel-one/",
+        eligibility: "Min age 21, income Rs.75K+/month, CIBIL 750+. Metro cities preferred.",
+        howToApply: "Apply via HSBC website. HSBC account holders get faster approval. Limited availability in tier-2 cities.",
+        creatorTip: "Professor Cardz & Aly Hajiani both recommend this as the top travel card after Axis Atlas/Magnus devaluation in 2026. Accor partnership makes this unbeatable for hotel redemptions."
+    },
+    {
+        id: "hdfc-6e-rewards-xl",
+        name: "HDFC 6E Rewards XL IndiGo Credit Card",
+        bank: "HDFC Bank",
+        tier: "mid",
+        joiningFee: 1500,
+        annualFee: 1500,
+        feeWaiver: "Waived on Rs.2L annual spend",
+        minSalary: 40000,
+        minSpend: 15000,
+        rewardRate: "5% 6E Rewards on IndiGo, 3% on groceries/dining/entertainment, 1% elsewhere",
+        rewardDetails: "5% 6E Rewards on IndiGo flights and add-ons (1:1 redemption). 3% accelerated on dining, groceries, entertainment. 1% on other spends. Rewards locked to IndiGo ecosystem.",
+        lounge: "8 domestic lounge visits per year",
+        fuelWaiver: "1% surcharge waiver",
+        forexMarkup: "2.5%",
+        welcomeBenefit: "IndiGo flight vouchers worth Rs.3,000 + 6E Prime membership",
+        milestoneBenefits: "Bonus 6E rewards on annual spend milestones",
+        bestFor: ["travel", "dining"],
+        highlights: [
+            { text: "5% on IndiGo flights — best for IndiGo loyalists", type: "good" },
+            { text: "8 domestic lounge visits/year included", type: "good" },
+            { text: "Aly Hajiani verdict: worth it ONLY if you fly IndiGo monthly", type: "info" },
+            { text: "Rewards locked to IndiGo — useless if you fly other airlines", type: "warn" }
+        ],
+        applyUrl: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/6e-rewards-xl-indigo-hdfc-bank-credit-card",
+        eligibility: "Min age 21, income Rs.40K+/month, CIBIL 720+",
+        howToApply: "Apply via HDFC Bank website, IndiGo app, or visit HDFC branch.",
+        creatorTip: "Aly Hajiani's May 2026 video: 'Are IndiGo Credit Cards Actually Worth It?' — his verdict: worth it only if you fly IndiGo 2x+ per month. For occasional travelers, Axis Atlas or HSBC TravelOne offer more flexibility."
     }
 ];
