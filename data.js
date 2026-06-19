@@ -463,14 +463,14 @@ const CREDIT_CARDS = [
         bestFor: ["travel", "rewards", "dining"],
         highlights: [
             { text: "5-7% return when redeemed for Taj vouchers", type: "good" },
-            { text: "Points transfer to 18+ airline/hotel partners", type: "good" },
+            { text: "Points transfer to airline/hotel partners", type: "good" },
             { text: "Amex offers portal gives additional 5-20% back", type: "info" },
-            { text: "Amex Platinum Travel milestone threshold raised 75% in 2026", type: "warn" }
+            { text: "DEVALUED Jul 1 2026: Etihad Guest removed as transfer partner (transfer by Jun 30)", type: "warn" }
         ],
         applyUrl: "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
         eligibility: "Min age 21, income 60K+/month, CIBIL 750+",
         howToApply: "Apply via Amex website directly. Also get referral links from existing Amex cardholders for bonus points.",
-        creatorTip: "Aly Hajiani's favorite for travel redemptions. Taj voucher hack still gives 5-7% return. NOTE: Amex raised milestone thresholds 75% in 2026 across Platinum Travel — harder to hit bonuses now."
+        creatorTip: "Aly Hajiani's favorite for travel redemptions. Taj voucher hack still gives 5-7% return. URGENT: Amex removing Etihad as transfer partner Jul 1, 2026 — transfer points before Jun 30. Professor Cardz also reports a 50% back offer on MR points (limited time)."
     },
     {
         id: "hdfc-tata-neu-infinity",
@@ -828,5 +828,63 @@ const CREDIT_CARDS = [
         eligibility: "Min age 21, income Rs.40K+/month, CIBIL 720+",
         howToApply: "Apply via HDFC Bank website, IndiGo app, or visit HDFC branch.",
         creatorTip: "Aly Hajiani's May 2026 video: 'Are IndiGo Credit Cards Actually Worth It?' — his verdict: worth it only if you fly IndiGo 2x+ per month. For occasional travelers, Axis Atlas or HSBC TravelOne offer more flexibility."
+    },
+    {
+        id: "indigo-axis-premium",
+        name: "IndiGo Axis BluChip Premium Credit Card",
+        bank: "Axis Bank",
+        tier: "premium",
+        joiningFee: 5000,
+        annualFee: 5000,
+        feeWaiver: "Waived on Rs.4L annual spend",
+        minSalary: 75000,
+        minSpend: 30000,
+        rewardRate: "7% BluChips on IndiGo, 3% on travel/dining, 1% elsewhere",
+        rewardDetails: "7% BluChip rewards on IndiGo flights and add-ons (1:1 redemption). 3% accelerated on travel and dining categories. 1% on other spends. NEW: Axis added IndiGo as a transfer partner in Jun 2026 — Axis Atlas/Magnus users can now transfer to BluChip.",
+        lounge: "8 domestic + 4 international lounge visits per year",
+        fuelWaiver: "1% surcharge waiver",
+        forexMarkup: "1.99%",
+        welcomeBenefit: "IndiGo flight vouchers worth Rs.5,000 + 6E Prime membership",
+        milestoneBenefits: "Bonus BluChips on Rs.5L, 10L annual spend",
+        bestFor: ["travel", "dining"],
+        highlights: [
+            { text: "7% on IndiGo — highest IndiGo reward rate on any card", type: "good" },
+            { text: "1.99% forex markup — beats HDFC IndiGo XL's 2.5%", type: "good" },
+            { text: "Axis added IndiGo as transfer partner Jun 2026", type: "good" },
+            { text: "RuPay variant available for UPI compatibility", type: "info" }
+        ],
+        applyUrl: "https://www.axisbank.com/retail/cards/credit-card",
+        eligibility: "Min age 21, income Rs.75K+/month, CIBIL 750+",
+        howToApply: "Apply via Axis Bank website, IndiGo app, or branch. Launched Feb 2026. RuPay or Visa network selectable.",
+        creatorTip: "Professor Cardz Jun 2026: Axis adding IndiGo as transfer partner is partial recovery from earlier devaluations (Accor/Marriott/Qatar dropped). 7% on IndiGo is now the highest in market."
+    },
+    {
+        id: "pnb-kiwi",
+        name: "PNB Kiwi RuPay Credit Card",
+        bank: "Punjab National Bank",
+        tier: "entry",
+        joiningFee: 0,
+        annualFee: 750,
+        feeWaiver: "Waived on Rs.1.5L annual spend",
+        minSalary: 20000,
+        minSpend: 8000,
+        rewardRate: "Up to 1.5% cashback on UPI scan-and-pay, 0.5% on online",
+        rewardDetails: "1.5% cashback on UPI scan-and-pay transactions. 0.5% on online card spends. 1% fuel surcharge waiver. Fully digital virtual card via Kiwi app. RuPay = works on UPI everywhere including small kirana stores.",
+        lounge: "None",
+        fuelWaiver: "1% surcharge waiver",
+        forexMarkup: "3.5%",
+        welcomeBenefit: "Rs.250 Amazon voucher (varies)",
+        milestoneBenefits: "None",
+        bestFor: ["cashback", "online"],
+        highlights: [
+            { text: "NEW Apr 22 2026 launch — PNB joins Kiwi UPI platform", type: "good" },
+            { text: "1.5% UPI cashback — same as Yes Bank Kiwi", type: "good" },
+            { text: "Reaches PNB's 180M customer base — easier approval", type: "info" },
+            { text: "Rs.750 annual fee (waivable) despite some 'LTF' marketing claims", type: "warn" }
+        ],
+        applyUrl: "https://gokiwi.in/",
+        eligibility: "Min age 21, income Rs.20K+/month. PNB account preferred but not required.",
+        howToApply: "Download Kiwi app and apply. Virtual card issued instantly. PNB account holders get faster approval.",
+        creatorTip: "Professor Cardz Jun 2026: 'Don't Miss This! PNB Joins Kiwi for UPI Rewards'. Good alternative to Yes Bank Kiwi if you have a PNB relationship or are new-to-credit."
     }
 ];
