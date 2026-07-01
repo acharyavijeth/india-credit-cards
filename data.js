@@ -247,24 +247,24 @@ const CREDIT_CARDS = [
         feeWaiver: "Lifetime Free",
         minSalary: 35000,
         minSpend: 10000,
-        rewardRate: "1.5% reward rate, 2 free movie tickets/month",
-        rewardDetails: "1.5 reward points per Rs.100 spent. 2 free movie tickets per month on BookMyShow (up to Rs.500). Domestic + international lounge access.",
-        lounge: "Lounge access now spend-linked from Apr 2026: Rs.1.5L/quarter required for standard cards",
+        rewardRate: "1.5% base, 2 free movie tickets/month, NEW 1:1 to Air India Maharaja Club",
+        rewardDetails: "1.5 reward points per Rs.100. 2 free movie tickets/month on BookMyShow. NEW Jun 1, 2026: 1:1 transfer to Air India Maharaja Club via IndusMoments (up to 25,000 pts/month) — this is the ONLY LTF card with airline transfer partnership.",
+        lounge: "8 domestic + Priority Pass. Standard variants: Rs.1.5L/quarter needed from Apr 2026.",
         fuelWaiver: "1% fuel surcharge waiver",
         forexMarkup: "1.8% — one of the lowest",
         welcomeBenefit: "None",
         milestoneBenefits: "None",
         bestFor: ["travel", "rewards"],
         highlights: [
+            { text: "NEW Jun 2026: 1:1 Air India Maharaja Club transfers — only LTF card with this", type: "good" },
             { text: "1.8% forex markup — among the lowest available", type: "good" },
-            { text: "2 free movie tickets/month on BookMyShow", type: "good" },
-            { text: "DEVALUED Apr 2026: Lounge access now requires Rs.1.5L quarterly spend", type: "warn" },
-            { text: "Base reward rate is average at 1.5%", type: "info" }
+            { text: "2 free movie tickets/month + Priority Pass on LTF card", type: "good" },
+            { text: "DEVALUED Apr 2026: Lounge access needs Rs.1.5L quarterly spend on standard variants", type: "warn" }
         ],
         applyUrl: "https://www.indusind.com/in/en/personal/cards/credit-card.html",
         eligibility: "Min age 21, income 35K+/month, CIBIL 700+",
         howToApply: "Apply via IndusInd Bank website or visit branch. Online application takes 5-7 days.",
-        creatorTip: "Aly Hajiani previously called this best LTF for intl travel. Apr 2026 lounge devaluation (effective April 1) makes it less attractive — Scapia now better for free lounge access."
+        creatorTip: "Aly Hajiani (Jul 2026): 'This Lifetime Free Card Now Transfers 1:1 to Air India' — big rerating. Best LTF card in India now for travel enthusiasts. Combine with Air India Maharaja Club membership for maximum value."
     },
     {
         id: "bob-eterna",
@@ -531,7 +531,7 @@ const CREDIT_CARDS = [
         applyUrl: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/diners-club-black",
         eligibility: "Min income Rs.1.75L/month or Rs.21L annual, CIBIL 750+",
         howToApply: "Check pre-approved offers in HDFC NetBanking first. Apply via HDFC website or visit branch. HDFC salary holders and existing premium card users get priority.",
-        creatorTip: "All 4 creators rate this among India's top 3 cards. Aly Hajiani says the reward rate is unmatched at this fee level."
+        creatorTip: "All 4 creators rate this among India's top 3 cards. Aly Hajiani says the reward rate is unmatched at this fee level. Professor Cardz Jul 2026 warns: HDFC Regalia Gold users being upgraded to Diners Black Metal Edition variant (Rs.10K fee, stricter approval) — SmartBuy voucher compatibility issues reported."
     },
     {
         id: "sc-ultimate",
@@ -886,5 +886,34 @@ const CREDIT_CARDS = [
         eligibility: "Min age 21, income Rs.20K+/month. PNB account preferred but not required.",
         howToApply: "Download Kiwi app and apply. Virtual card issued instantly. PNB account holders get faster approval.",
         creatorTip: "Professor Cardz Jun 2026: 'Don't Miss This! PNB Joins Kiwi for UPI Rewards'. Good alternative to Yes Bank Kiwi if you have a PNB relationship or are new-to-credit."
+    },
+    {
+        id: "pvr-inox-kotak",
+        name: "PVR INOX Kotak Credit Card",
+        bank: "Kotak Mahindra Bank",
+        tier: "mid",
+        joiningFee: 999,
+        annualFee: 999,
+        feeWaiver: "Waived on Rs.1L annual spend",
+        minSalary: 30000,
+        minSpend: 10000,
+        rewardRate: "20% flat on PVR INOX F&B, free movie tickets on milestones",
+        rewardDetails: "Flat 20% discount on Food & Beverages at any PVR INOX theatre or on the PVR INOX app. 1 free movie ticket per month on Rs.10K monthly spend. Complimentary access to premium in-cinema lounges. 5% cashback on movie ticket bookings.",
+        lounge: "4 domestic lounge visits per year + in-cinema PVR lounges",
+        fuelWaiver: "1% surcharge waiver",
+        forexMarkup: "3.5%",
+        welcomeBenefit: "2 free PVR INOX movie tickets",
+        milestoneBenefits: "1 free movie ticket per Rs.10K monthly spend",
+        bestFor: ["dining", "cashback"],
+        highlights: [
+            { text: "20% flat on PVR INOX F&B — highest movie snack cashback", type: "good" },
+            { text: "Free monthly movie ticket at Rs.10K spend milestone", type: "good" },
+            { text: "In-cinema PVR premium lounge access included", type: "info" },
+            { text: "Benefits locked to PVR INOX ecosystem", type: "warn" }
+        ],
+        applyUrl: "https://www.kotak.com/en/personal-banking/cards/credit-cards/pvr-inox-kotak-credit-card.html",
+        eligibility: "Min age 21, income Rs.30K+/month, CIBIL 720+",
+        howToApply: "Apply via Kotak Bank website or PVR INOX app. Fully digital application.",
+        creatorTip: "Professor Cardz Jul 2026: '20% Cashback on Movie Snacks | Best Cards for Entertainment 2026' — this is the top pick for movie-goers. Skip if you rarely visit theatres."
     }
 ];
