@@ -24,7 +24,7 @@ const CREDIT_CARDS = [
             { text: "5% cashback on online spends — no merchant restriction", type: "good" },
             { text: "Best entry-level cashback card per Aly Hajiani & Sharan", type: "good" },
             { text: "DEVALUED Apr 2026: Monthly cap Rs.4,000 (was Rs.5,000/cycle)", type: "warn" },
-            { text: "Excludes gaming, toll, govt payments. Points redeemable in multiples of 4,000 only", type: "warn" }
+            { text: "Excludes gaming, toll, govt. Points forfeit after 365 days inactive.", type: "warn" }
         ],
         applyUrl: "https://www.sbicard.com/en/personal/credit-cards/cashback/sbi-card-cashback.page",
         eligibility: "Min age 21, salaried with 25K+ monthly income, CIBIL 700+",
@@ -673,7 +673,7 @@ const CREDIT_CARDS = [
         highlights: [
             { text: "10%+ return for heavy spenders (3L+/month)", type: "good" },
             { text: "Metal card variant available", type: "good" },
-            { text: "DEVALUED 2026: Accor, Marriott, Qatar Airways removed as transfer partners", type: "warn" },
+            { text: "DEVALUED 2026: Accor, Marriott, Qatar Airways removed; ratio dropped to 5:2 (was 5:4) for Burgundy Group B partners", type: "warn" },
             { text: "Reward rate drops significantly below 1L/month spend", type: "warn" }
         ],
         applyUrl: "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card",
@@ -915,5 +915,34 @@ const CREDIT_CARDS = [
         eligibility: "Min age 21, income Rs.30K+/month, CIBIL 720+",
         howToApply: "Apply via Kotak Bank website or PVR INOX app. Fully digital application.",
         creatorTip: "Professor Cardz Jul 2026: '20% Cashback on Movie Snacks | Best Cards for Entertainment 2026' — this is the top pick for movie-goers. Skip if you rarely visit theatres."
+    },
+    {
+        id: "slice",
+        name: "slice Credit Card (RuPay UPI)",
+        bank: "slice (via NBFC partner)",
+        tier: "entry",
+        joiningFee: 0,
+        annualFee: 0,
+        feeWaiver: "Lifetime Free",
+        minSalary: 15000,
+        minSpend: 3000,
+        rewardRate: "2% flat cashback incl UPI, up to 3% via weekly Sparks program",
+        rewardDetails: "2% flat cashback on all spends including UPI. Weekly rotating 'Sparks' offers give additional 1-3% cashback on selected brands (food delivery, groceries, fuel). Purchases above Rs.1,999 can be split into 3 free EMIs. Fully digital, virtual card. Part of slice's new UPI-first ecosystem (Aug 2026 launch of atom savings + sparks).",
+        lounge: "None",
+        fuelWaiver: "None",
+        forexMarkup: "3.5%",
+        welcomeBenefit: "Instant approval, digital card in 5 minutes",
+        milestoneBenefits: "Weekly Sparks brand offers",
+        bestFor: ["cashback", "online"],
+        highlights: [
+            { text: "2% flat cashback including on UPI — no cap", type: "good" },
+            { text: "Free 3-EMI split on purchases > Rs.1,999", type: "good" },
+            { text: "Weekly Sparks program adds 1-3% on rotating brands", type: "good" },
+            { text: "Easiest approval for new-to-credit users", type: "info" }
+        ],
+        applyUrl: "https://www.sliceit.com/",
+        eligibility: "Min age 18. Suitable for students, new-to-credit users, low-income earners.",
+        howToApply: "Download slice app, complete KYC, get virtual card instantly. No income proof required for basic tier.",
+        creatorTip: "Professor Cardz Aug 2026: 'Most innovative card ecosystem in India' - slice combines UPI credit card, savings account (100% RBI repo linked), FDs (up to 7.25%), and weekly Sparks rewards. Best starter card for anyone new to credit."
     }
 ];
