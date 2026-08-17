@@ -944,5 +944,34 @@ const CREDIT_CARDS = [
         eligibility: "Min age 18. Suitable for students, new-to-credit users, low-income earners.",
         howToApply: "Download slice app, complete KYC, get virtual card instantly. No income proof required for basic tier.",
         creatorTip: "Professor Cardz Aug 2026: 'Most innovative card ecosystem in India' - slice combines UPI credit card, savings account (100% RBI repo linked), FDs (up to 7.25%), and weekly Sparks rewards. Best starter card for anyone new to credit."
+    },
+    {
+        id: "hsbc-visa-platinum",
+        name: "HSBC Visa Platinum Credit Card",
+        bank: "HSBC",
+        tier: "entry",
+        joiningFee: 0,
+        annualFee: 0,
+        feeWaiver: "Lifetime Free",
+        minSalary: 25000,
+        minSpend: 8000,
+        rewardRate: "2 points per Rs.150 (1.33%), 20 transfer partners incl KrisFlyer/Avios/Flying Blue",
+        rewardDetails: "2 reward points per Rs.150 spent (1.33%). 6 points per Rs.150 on hotel/flight/car rental bookings via 'Travel with Points' portal. 20 transfer partners: 15 airlines (KrisFlyer, Avios, Flying Blue, etc.) + 5 hotels (Marriott Bonvoy + 4 more). Rare LTF card with airline transfers.",
+        lounge: "None",
+        fuelWaiver: "1% surcharge waiver at all pumps",
+        forexMarkup: "3.5%",
+        welcomeBenefit: "Multi-part welcome: 2,000 pts on Rs.5K spend + Rs.500 Amazon/Zomato/Swiggy voucher + 3-month Swiggy One + Rs.250 Amazon eGift on video KYC",
+        milestoneBenefits: "None",
+        bestFor: ["travel", "rewards", "dining"],
+        highlights: [
+            { text: "LTF card with 20 airline/hotel transfer partners — rare combo", type: "good" },
+            { text: "Multiple welcome benefits stacking worth ~Rs.1,500+", type: "good" },
+            { text: "Free Times Prime on Visa Signature variant (Visa's ongoing offer)", type: "good" },
+            { text: "BOGO on BookMyShow, complimentary Swiggy One 3 months", type: "info" }
+        ],
+        applyUrl: "https://www.hsbc.co.in/credit-cards/products/visa-platinum/",
+        eligibility: "Age 18-65, min Rs.25K/month income, CIBIL 700+. Metro cities preferred.",
+        howToApply: "Apply via HSBC website with video KYC (extra Rs.250 Amazon voucher). HSBC account holders get faster approval.",
+        creatorTip: "Card Academy Aug 2026: 'HSBC Visa Platinum Review 2026 | Lifetime free' — highlighted as best LTF card with airline transfer capability. Ideal secondary card to stack with SBI Cashback or Amazon Pay ICICI."
     }
 ];
