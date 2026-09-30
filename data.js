@@ -673,13 +673,13 @@ const CREDIT_CARDS = [
         highlights: [
             { text: "10%+ return for heavy spenders (3L+/month)", type: "good" },
             { text: "Metal card variant available", type: "good" },
-            { text: "DEVALUED 2026: Accor, Marriott, Qatar Airways removed; ratio dropped to 5:2 (was 5:4) for Burgundy Group B partners", type: "warn" },
+            { text: "Sep 23 2026 PARTIAL RECOVERY: Accor is BACK. Cathay Pacific, Lufthansa ADDED. Marriott, Qatar still gone. Ratio 5:2 for Group B.", type: "info" },
             { text: "Reward rate drops significantly below 1L/month spend", type: "warn" }
         ],
         applyUrl: "https://www.axisbank.com/retail/cards/credit-card/magnus-credit-card",
         eligibility: "Min income Rs.5L/month, relationship-based. Burgundy Private banking members get priority.",
         howToApply: "Apply via Axis Bank relationship manager or Burgundy banking. Not available via open application.",
-        creatorTip: "CardExpert says this beats Infinia for high spenders. WARNING: Axis removed key transfer partners (Accor, Marriott, Qatar) in 2026 — significantly reduces travel redemption value."
+        creatorTip: "CardExpert says this beats Infinia for high spenders. UPDATE Sep 23 2026: Axis reinstated Accor as transfer partner and added Cathay Pacific + Lufthansa. Marriott, Qatar still removed. Card partially rehabilitated; Professor Cardz advises: don't close your Atlas/Magnus yet."
     },
     {
         id: "amex-platinum",
@@ -782,7 +782,7 @@ const CREDIT_CARDS = [
         minSalary: 75000,
         minSpend: 30000,
         rewardRate: "4x points on travel/dining, 1 point per Rs.100 base, 20 transfer partners",
-        rewardDetails: "1 reward point per Rs.100 base. 4x accelerated on travel and dining. Points transferable to 20 hotel/airline partners including Accor ALL (1:1 - now best value after Axis dropped Accor in Apr 2026). 1 RP = ~Re.1 via transfer partners.",
+        rewardDetails: "1 reward point per Rs.100 base. 4x accelerated on travel and dining. Points transferable to 20 hotel/airline partners including Accor ALL (1:1). Note Sep 2026: Axis re-added Accor so HSBC no longer sole strong holder, but HSBC's rate structure still competitive.",
         lounge: "6 domestic + 4 international lounge visits per year via Priority Pass",
         fuelWaiver: "1% surcharge waiver",
         forexMarkup: "1.99%",
@@ -791,14 +791,14 @@ const CREDIT_CARDS = [
         bestFor: ["travel", "rewards", "dining"],
         highlights: [
             { text: "20 transfer partners — most diverse in India", type: "good" },
-            { text: "Accor 1:1 transfer now best in India (Axis dropped Accor Apr 2026)", type: "good" },
+            { text: "20 transfer partners including Accor 1:1 (Axis re-added Accor Sep 2026)", type: "good" },
             { text: "Recommended by Aly Hajiani as Axis Atlas replacement", type: "good" },
             { text: "1.99% forex markup — very competitive for premium card", type: "good" }
         ],
         applyUrl: "https://www.hsbc.co.in/credit-cards/products/travel-one/",
         eligibility: "Min age 21, income Rs.75K+/month, CIBIL 750+. Metro cities preferred.",
         howToApply: "Apply via HSBC website. HSBC account holders get faster approval. Limited availability in tier-2 cities.",
-        creatorTip: "Professor Cardz & Aly Hajiani both recommend this as the top travel card after Axis Atlas/Magnus devaluation in 2026. Accor partnership makes this unbeatable for hotel redemptions."
+        creatorTip: "Professor Cardz Sep 2026: still a top travel card, but Axis Atlas is now viable again after Sep 23 partner restoration. Choose HSBC TravelOne for broader diversity (20 partners); Atlas for higher reward rate if you're already invested there."
     },
     {
         id: "hdfc-6e-rewards-xl",
