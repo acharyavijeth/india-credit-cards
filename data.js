@@ -470,7 +470,7 @@ const CREDIT_CARDS = [
         applyUrl: "https://www.americanexpress.com/in/credit-cards/membership-rewards-credit-card/",
         eligibility: "Min age 21, income 60K+/month, CIBIL 750+",
         howToApply: "Apply via Amex website directly. Also get referral links from existing Amex cardholders for bonus points.",
-        creatorTip: "Aly Hajiani's favorite for travel redemptions. Taj voucher hack still gives 5-7% return. URGENT: Amex removing Etihad as transfer partner Jul 1, 2026 — transfer points before Jun 30. Professor Cardz also reports a 50% back offer on MR points (limited time)."
+        creatorTip: "Aly Hajiani's favorite for travel redemptions. Taj voucher hack still gives 5-7% return. UPDATE Sep 30 2026: Amex killed Reward Multiplier program (5X/3X/2X on Apple, Nykaa, Myntra, MakeMyTrip). ShopWise e-voucher platform still offers up to 5X. Platinum Travel variant paused for new applicants in India."
     },
     {
         id: "hdfc-tata-neu-infinity",
@@ -973,5 +973,34 @@ const CREDIT_CARDS = [
         eligibility: "Age 18-65, min Rs.25K/month income, CIBIL 700+. Metro cities preferred.",
         howToApply: "Apply via HSBC website with video KYC (extra Rs.250 Amazon voucher). HSBC account holders get faster approval.",
         creatorTip: "Card Academy Aug 2026: 'HSBC Visa Platinum Review 2026 | Lifetime free' — highlighted as best LTF card with airline transfer capability. Ideal secondary card to stack with SBI Cashback or Amazon Pay ICICI."
+    },
+    {
+        id: "sbi-eternal",
+        name: "SBI ETERNAL Credit Card (launching)",
+        bank: "SBI Card x Eternal (Zomato parent)",
+        tier: "mid",
+        joiningFee: 0,
+        annualFee: 0,
+        feeWaiver: "Fees TBA - card spotted on SBI site Oct 2026, full launch imminent",
+        minSalary: 25000,
+        minSpend: 10000,
+        rewardRate: "10% instant discount on Zomato/District/Blinkit (non-grocery), 5% valueback on select merchants",
+        rewardDetails: "10% instant discount at Zomato, District (events/movies), Blinkit (non-grocery items). 5% valueback on select merchants (list TBA). BOGO movie ticket on District app every month. Focused on everyday lifestyle: food delivery, quick commerce, entertainment.",
+        lounge: "TBA",
+        fuelWaiver: "TBA",
+        forexMarkup: "TBA",
+        welcomeBenefit: "TBA at launch",
+        milestoneBenefits: "TBA at launch",
+        bestFor: ["dining", "online", "cashback"],
+        highlights: [
+            { text: "10% instant discount on Zomato - highest in category", type: "good" },
+            { text: "Covers full Eternal ecosystem: Zomato, Blinkit, District", type: "good" },
+            { text: "Monthly BOGO movie ticket on District app", type: "good" },
+            { text: "PRE-LAUNCH as of Oct 4 2026 - fees and full terms not yet published", type: "warn" }
+        ],
+        applyUrl: "https://www.sbicard.com",
+        eligibility: "Expected: salaried Rs.25K+/month, CIBIL 720+. Confirm at launch.",
+        howToApply: "Card spotted on SBI Card website Oct 2026 but applications not yet open. Watch SBI Card website or sign up for alerts.",
+        creatorTip: "Card Academy Oct 2026: 'NEW LAUNCH: SBI ETERNAL Credit Card' (11k views, 3 days ago). Direct competitor to Swiggy HDFC BLCK. If 10% discount is uncapped it will dominate the food-delivery category; wait for fee reveal before deciding."
     }
 ];
